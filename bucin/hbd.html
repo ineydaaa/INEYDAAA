@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pibesday nabila</title>
+</head>
+<body>
+    <center>
+    <form action="">
+
+        <h1>Masuk dulu ya kak</h1>
+        <h3>Login</h3>
+        <div class="input-box">
+            <input type="text" id="Username" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <input type="Password" id="Password" placeholder="Password" required>
+        </div>
+
+        <button type="button" onclick="login()">Login</button>
+
+
+    </form>
+</div>
+<script>
+    function login() {
+        // Dapatkan nilai dari input username dan password
+        const username = document.getElementById("Username").value;
+        const password = document.getElementById("Password").value;
+
+        // Validasi sederhana (tambahkan validasi lebih kuat sesuai kebutuhan)
+        if (username && password) {
+            // Redirect ke halaman dashboard
+            window.location.href = "video.html";
+        } else {
+            alert("Harap masukkan username dan password yang valid.");
+        }
+    }
+
+    </script>
+</center>
+</body>
+</html>
